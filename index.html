@@ -5,12 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    
+
 </head>
 <body>
     <h1>hola </h1>
+    <h2>registro de la informacion</h2>
+
+    <div id ="formContainer">
+        <input type="text" placeholder="ingrese el id" id="id"/>
+        <input type="text" placeholder="ingrese el nombre" id="name"/>
+        <input type="text" placeholder="ingrese la marca" id="brand"/>
+        <input type="text" placeholder="ingrese la edad" id="year"/>
+        <input type="text" placeholder="ingrese la descripcion" id="description"/>
+        <input type="text" placeholder="ingrese la categoria" id="idcategory"/>
+        <button onclick="sendCostume()">enviar</button>
+        <button onclick="sendUnpdate()">actualizar</button>
+        <button onclick="sendDelete()">borrar</button>
+        
+
+    </div>
+
     <p>como estas<p>
     <p id="toChange">nada aqui volando por el espacio</p>
-
+    
+    <h2>
+        TRAJES DISPONIBLES
+    </h2>
+    
+    <div id = "response"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="app.js"></script>     
 </body>
 </html> 
